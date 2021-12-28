@@ -1,0 +1,33 @@
+GET http://localhost:8081/customers
+Accept: application/json
+
+###
+
+POST http://localhost:8081/customers
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "Perry",
+  "lastName": "Wilson",
+  "email": "perryWorks@gmail.com",
+  "phoneNumber": "910777899"
+}
+###
+
+GET http://localhost:8081/customers/1
+Accept: application/json
+
+
+###
+DELETE http://localhost:8081/customers
+Content-Type: application/json
+
+{
+  "id": 2,
+  "firstName": "Mary",
+  "lastName": "Wilson",
+  "email": "marry2@gmail.com",
+  "phoneNumber": "9104889066"
+}
+###
